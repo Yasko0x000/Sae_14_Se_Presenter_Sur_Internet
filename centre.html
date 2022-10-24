@@ -1,0 +1,94 @@
+<!DOCTYPE html>          <!--Cette ligne nous permes d'eviter de passer en quirks mode lors du rendu d'un document-->
+<html lang="fr">
+<head>                   <!--La variable "head" c'est pour reperer l'entete du site, on y met tout les bases du site sans qu'il ne sois concretement visible sur le site (sauf pour le title et le favicon)-->
+	<title>Centres d'intérêt</title>                                                        <!-- Variable titre -->
+  <meta charset="utf-8">                                                        <!-- L'encodage utf-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- L'élément de métadonnées du document -->
+	<link rel="stylesheet" type="text/css" href="css/menu.css">                   <!-- Les suivantes 4 lignes sont des liaison pour le bon fonctionnement de mon site -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <link rel="icon" type="image/png" href="img/yasko_logo.png" />
+
+</head>
+
+
+<body>                                    <!-- A partir de cette variable jusqu'a sa fermeture, il y'aura tout le contenu du site-->
+
+  <header>      <!--En tete-->
+
+    <h1>  <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine">                                      <!-- La balise h1 est pour repérer un titre dans une page-->
+      <b>Mes Centres d'intérêt </b>                  <!-- <b> nous permet de mettre en gras un texte-->
+        <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine">  
+      </h1>
+    </header> 
+  <input type="checkbox" id="check_menu" >       <!-- La balise imput a la fonctionnalité de créer un contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des données, dans mon cas sous forme de box -->
+      <nav class="header">                               <!-- Nav est une balise destinée à la navigation, mais dans mon paragraphe cela concerne le menu burger -->
+      	<div class="h-left">
+      		<label for="check_menu">                       <!-- label c'est une legende ou bien une étiquette -->
+      			<i class="fa fa-bars"></i>                   <!-- <i> représente un morceau de texte qui se différencie du texte principal (au lieu de <p>) -->
+      		</label>
+      	</div>
+      </nav>
+
+<div class="sidebar">                                    <!-- <div> est une balise qui permet de creer une division ou bien un conteneur, il ne change pas la mise en forme du site, sauf comme dans mon cas, j'ai rajoité une class pour crée une reference pour ensuite la modifier dans le css (stylesheet)-->
+     <div class="sidebar_close">
+        <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine">          <!-- La variable img nous permet d'inserer une image peut importe son format (png, jpg, jpeg,etc), il est utile de mettre un alt="" est mettre a l'interieur un texte qui va s'afficher en cas d'erreur-->
+        <label for="check_menu"><i class="fa fa-close"></i></label>
+     </div>
+     
+	<div class="nav-list">
+		    <a class="micon" href="index.html"><i class="fa fa-home ic"></i><span>Accueil</span> </a>     <!-- <a> cela permet de crée des lien, il y'a donc tres souvent un href="" qui va donc contenir le chemin du lien souhaité, cette explication est valable pour les 5 lignes suivantes-->
+        <a class="micon" href="bio.html"><i class="fa fa-user-secret" aria-hidden="true"></i><span>Biographie</span></a>
+		    <a class="micon" href="centre.html"><i class="fa fa-superpowers" aria-hidden="true"></i><span>Centre d'interet </span></a>
+        <a class="micon" href="parcours-scolaire.html"><i class="fa fa-book"></i><span>Parcours scolaire</span></a>
+        <a class="micon" href="pro.html"><i class="fa fa-briefcase"></i><span>Projet Professionel</span></a>
+        <a class="micon" href="Curriculum_Vitae-Yassine_EL-Hamioui.pdf" target="_blank"><i class="fa fa-user-circle-o"></i><span>Mon CV</span></a>
+        <br><br><br>   <!-- Cette ligne me permet de mettre a la ligne une variable, dans mon cas je l'ai utilisé plusieurs fois pour eviter de toucher à cela dans css -->
+    </div>
+    <p style="padding-left: 15px;">Musique tranquille pour faciliter la lecture</p>
+    <audio controls>
+      <source src="img/sake.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+</div>
+
+
+
+<div class="profil-primo">
+    <img class="pp-primo" src="https://pbs.twimg.com/media/D8d7RItUIAEZCLA.jpg" alt="">
+    <h3>CTF Challenges</h3>
+    <p class="p2"><b>Je suis passionné par la cybersécurité depuis mon enfance, en commençant par les films de science-fiction Hacking tels que Matrix, Ch@troom, Tron l'héritage et Mafia Connexion.</b></p>
+    <br><p class="p1">  Ayant grandi j’ai pu voir le hacking de manière plus réaliste, en effet c’est très similaire à ce qu’on peut voir dans les films, sauf que ce n’est pas la même efficacité, dans la réalité c’est plus complexe. 
+      <br>J’ai donc découvert les challenges CTF (Capture The Flag), qui à le même principe, on doit pouvoir récupérer une information cachée dans le système proposé, protéger une information ou bien trouver une faille dans un système. 
+      <br><br>Pour commencer il faut être autonome, il faut prendre le temps de tout lire, de comprendre le fonctionnement et surtout ne jamais lâcher l’affaire, je dois donc faire preuve de patience, je dois savoir chercher la solution en passant par tout les moyen. 
+      <br>Les CTF se passe souvent en équipe et on pourrait même y participer au niveau international, par exemple chaque année il y a le CTF Google Challenge avec des récompenses pour l’équipe qui a accumulé le plus de points face à ses adversaires.</p>
+  
+  </div>
+
+<br><hr>
+
+<div class="profil-secondo">
+<img class="pp-secondo" src="https://sf1.autoplus.fr/wp-content/uploads/autoplus/2021/03/video-drift-avec-bmw-competition.jpeg" alt="">
+<h3>Automobilie</h3>
+    <p class="p2"><b>Ma deuxième plus grande passion, concerne l’automobilie.</b></p>
+    <br><p class="p1"> Les voitures et la mécanique en général sont des morceaux de notre vie (déplacement en voitures, pour le travail, l’alimentation, ...), mais ça peut être aussi un passe-temps (comme les JV ou le sport). 
+      <br>Ça apporte des connaissances non-négligeables, qui peuvent avoir une retombée pécuniaire (mécanique simple). 
+      <br><br>C’est un marqueur de l’histoire (de la Jamais Contente qui a passé les 100km/h en 1899 à la Cox’ qui est le marqueur automobile du IIIè Reich, en passant par la Ford T et le fordisme, par exemple). 
+      <br>Un des marquers d'histoire que j'aime le plus est le record de drifting de chez BMW, ils ont fait le drift le plus long avec leur berline sportive, la M5, en parcourant 232,5 miles en 8 heures (plus de 373 km), battant de plus de 140 miles le précendent record. C'est totalement incroyable puisque pour drifter pendant 8 heures consecutive le carburant n'est pas infinis, ils on donc utilisé un système de ravitaillement en plein drift, pendant que la voiture driftais, une deuxième BMW s'est ramené elle aussi pendant son drift à procedé au ravitaillement.<a class="p1" style="color: red;" href="video-bmw.html"> (Lien vers la video)</a>
+      <br><br>C’est quelque chose qui s´est développé dans tous les milieux, qui a rapproché les gens, au travers <br>le sport (F1, NASCAR), la Guerre (les Taxis de la Marne), le travail (le pick-up qui remplace le cheval de trait). 
+      <br><br>Ça a permis le développement des pays industrialisés, et la naissance de pays émergeants.
+      </p><br>
+</div>
+
+
+
+
+<footer>                                                          <!-- le pied de page -->
+ 
+</footer>
+
+
+
+</body>
+</html>

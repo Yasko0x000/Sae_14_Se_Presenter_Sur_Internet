@@ -1,0 +1,180 @@
+<!DOCTYPE html>          <!--Cette ligne nous permes d'eviter de passer en quirks mode lors du rendu d'un document-->
+<html lang="en">
+<head>                   <!--La variable "head" c'est pour reperer l'entete du site, on y met tout les bases du site sans qu'il ne sois concretement visible sur le site (sauf pour le title et le favicon)-->
+	<title>Professional project</title>                                                        <!-- Variable titre -->
+  <meta charset="utf-8">                                                        <!-- L'encodage utf-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- L'élément de métadonnées du document -->
+	<link rel="stylesheet" type="text/css" href="css/menu.css">                   <!-- Les suivantes 4 lignes sont des liaison pour le bon fonctionnement de mon site -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <link rel="icon" type="image/png" href="img/yasko_logo.png" /> <!-- Icone-->
+
+</head>
+
+
+<body>                                    <!-- A partir de cette variable jusqu'a sa fermeture, il y'aura tout le contenu du site-->
+
+  <header>      <!--En tete-->
+
+    <h1>  <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine">                                      <!-- La balise h1 est pour repérer un titre dans une page-->
+      <b>Professional project</b>                  <!-- <b> nous permet de mettre en gras un texte-->
+        <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine"> 
+      </h1>
+    </header>
+  <input type="checkbox" id="check_menu" >       <!-- La balise imput a la fonctionnalité de créer un contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des données, dans mon cas sous forme de box -->
+      <nav class="header">                               <!-- Nav est une balise destinée à la navigation, mais dans mon paragraphe cela concerne le menu burger -->
+      	<div class="h-left">
+      		<label for="check_menu">                       <!-- label c'est une legende ou bien une étiquette -->
+      			<i class="fa fa-bars"></i>                   <!-- <i> représente un morceau de texte qui se différencie du texte principal (au lieu de <p>) -->
+      		</label>
+      	</div>
+      </nav>
+
+<div class="sidebar">                                    <!-- <div> est une balise qui permet de creer une division ou bien un conteneur, il ne change pas la mise en forme du site, sauf comme dans mon cas, j'ai rajoité une class pour crée une reference pour ensuite la modifier dans le css (stylesheet)-->
+     <div class="sidebar_close">
+        <img class="logo" src="img/yasko_logo.png" alt="Logo-Yassine">          <!-- La variable img nous permet d'inserer une image peut importe son format (png, jpg, jpeg,etc), il est utile de mettre un alt="" est mettre a l'interieur un texte qui va s'afficher en cas d'erreur-->
+        <label for="check_menu"><i class="fa fa-close"></i></label>
+     </div>
+     
+	<div class="nav-list">
+		    <a class="micon" href="index.html"><i class="fa fa-home ic"></i><span>Home</span> </a>     <!-- <a> cela permet de crée des lien, il y'a donc tres souvent un href="" qui va donc contenir le chemin du lien souhaité, cette explication est valable pour les 5 lignes suivantes-->
+        <a class="micon" href="bio.html"><i class="fa fa-user-secret" aria-hidden="true"></i><span>Biography</span></a>
+		    <a class="micon" href="centre.html"><i class="fa fa-superpowers" aria-hidden="true"></i><span>Area of interest </span></a>
+        <a class="micon" href="parcours-scolaire.html"><i class="fa fa-book"></i><span>Educational background</span></a>
+        <a class="micon" href="pro.html"><i class="fa fa-briefcase"></i><span>Professional project</span></a>
+        <a class="micon" href="Curriculum_Vitae-Yassine_EL-Hamioui.pdf" target="_blank"><i class="fa fa-user-circle-o"></i><span>My CV</span></a>
+    </div>
+    <p style="padding-left: 15px;">Quiet music to facilitate reading</p>
+    <audio controls>
+      <source src="img/sake.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+</div>
+<div class="intro">
+    <h3>Introduction</h3>
+    <p id="intro"> <b>Currently a student in BUT Network & Telecommunication, I present you my professional project. The aim is to take stock of my skills, my professional experience and my professional objectives. My professional project is probably not definitive. It is likely to evolve over time. </b></p>
+</div>
+
+
+<!--DEBUT Qualités -->
+<div class="profil-qualita">
+  <img class="pp-qualita" src="img/competences.jpeg" alt=""><h3 style="font-size: 36px;">1. My qualities:</h3>
+  <p class="p2">I have several qualities such as :</p>
+  <p class="p2"><br /></p>
+  <p class="p2"><b>Autonomy :</b></p>
+  <p class="p1">I am able to work independently. Indeed, I have found that I like to be independent in my work.</p>
+  <p class="p2"><br /></p>
+  <p class="p2"><b>Adaptation :</b></p>
+  <p class="p1">I adapt very easily and very quickly to a new environment. Thanks to my experiences so far, I adopt very quickly the method of work requested, I find my bearings, I know who to turn to (in this case the internet is my best friend as far as help and knowledge are concerned) if I have difficulties or if I have questions to ask.</p>
+  <p class="p2"><br /></p>
+  <p class="p2"><b>Self-confidence :</b></p>
+  <p class="p1">I have enough confidence in myself. Indeed, having succeeded in adapting to a completely new environment by changing country, friends, life in general, following my transfer to France. This experience allowed me to overcome my shyness in front of the public, in front of the unknown and that created a strong courage. </p>
+  <p class="p2"><br /></p>
+  <p class="p2"><b>Practicality: </b></p>
+  <p class="p1">I never really liked theory. I was never really comfortable with it either. Thanks to the course I chose (BUT R&T), practice stops when necessary and we go straight to the practical work. The practice helps me to understand the problem and to solve it. Knowing that a computer course the necessary material is very easy to obtain</p>
+  
+  <p>&nbsp;</p>
+
+</div>
+<!--FIN Qualités-->
+
+<!--DEBUT Qualités -->
+<div class="profil-defaut">
+    <img class="pp-defaut" src="https://cdn.pixabay.com/photo/2015/10/31/12/07/tv-1015427_1280.jpg" alt=""><h3 style="font-size: 36px;">2. My faults:</h3>
+    <p class="p2"><b>Procrastination :</b></p>
+    <p class="p1">I often put off until tomorrow what I can do on the day. I often work at the last minute.</p>
+  <br><br>
+    
+    <p>&nbsp;</p>
+  
+  </div><br>
+  <!--FIN Qualités-->
+
+  <!--DEBUT Ce que je souhaite faire -->
+<div class="profil-goal">
+    <img class="pp-goal" src="http://socialwebqanda.com/wp-content/uploads/2020/12/goals.jpg" alt=""><h3 style="font-size: 36px;">3. What I want to do :</h3>
+    <p class="p1">At the end of my studies, I would like to turn to a profession that resembles me, namely the White Hat or ethical hacker (in the field of cybersecurity/hacking).</p>
+    <br><p class="p1">Indeed, I like coding a lot, I'm attracted by hacking since my youngest age following the action movie (as said in the page "Interests" . I'm comfortable with the computer world since I've been doing it since I was 5 years old. I like to be surrounded by a team with which each one will have a precise task to achieve the project.</p>
+    <br><p class="p1">I have always had a creative mind, indeed the hacking (legal) raises a certain challenge the person concerned.</p>
+   
+    <p>&nbsp;</p>
+  
+  </div><hr>
+  <!--FIN Ce que je souhaite faire-->
+
+   <!--DEBUT Ce que je sais faire et ce que je suis capable de faire -->
+<div class="profil-capable">
+    <h3 style="font-size: 36px;">5. What I can do and what I am capable of doing</h3>
+    <p class="p1">I am at the beginning of my training, however, I easily understand the logic and functioning of a program, the functioning of a network structure. <br>I am constantly improving in English which is one of the most important languages in the professional field.</p>
+    
+    <p>&nbsp;</p>
+  
+  </div><hr>
+  <!--FIN Ce que je sais faire et ce que je suis capable de faire-->
+  
+    <!--DEBUT Ce que je voudrais être -->
+<div class="profil-futuro">
+    <img class="pp-futuro" src="https://p1.pxfuel.com/preview/691/103/616/cyber-security-internet-network-technology-computer.jpg" alt=""><h3 style="font-size: 36px;">6. What I would like to be</h3>
+    <p class="p2"><b>In 5 years&nbsp;:</b></p>
+    <p class="p1">In 5 years, I see myself working in a military service, at the ANSSI. I see myself working as a salaried engineer, quickly climbing the ladder and then creating my own "Start-UP". I see myself married with children.</p>
+    <p class="p1">My dream place to live in 5 years is Milan, it's not a very big city like New Yorks, but I always liked this city. My second dream city is Monaco or Lausanne, they are Swiss cities.</p>
+
+    <br>
+
+    <p class="p2"><b>In 10 years&nbsp;:</b></p>
+    <p class="p1"> In 10 years, I see myself leading the large network of a cybersecurity company, learning new skills in my business and always improving.</p>
+    <p class="p1">I look ahead 10 years and see myself with a life in constant motion.</p>
+    <p class="p1">I see myself divorced since I am a lone wolf. I have an apartment in a skyscraper in the city.</p>
+    <p>&nbsp;</p>
+  
+  </div>
+  <!--FIN Ce que je voudrais être-->
+
+    <!--DEBUT Les métiers qui m'intéressent -->
+    <div class="profil-qualita">
+            <img class="pp-qualita" src="https://p0.piqsels.com/preview/413/210/407/systems-icons-system-integration-computer-system-computer-thumbnail.jpg" alt=""><h3 style="font-size: 36px; padding-top: 20px;">7. Jobs that interest me</h3>
+            <p class="p2"><b>This part is dedicated to the presentation of the jobs that interest me in the cybersecurity sector. </b></p>
+            <br><p class="p1">Working in the world of cybersecurity is above all a continuity in learning that will be done on a daily basis in order to be on the lookout for new developments. </p>
+            <p class="p1">It is therefore essential at some point to undertake specialized training. <br>The main mission of the cybersecurity expert is to protect the data as well as the reliability of a company's computer system.</p>
+            <p class="p2"></p>
+            <p class="p2"><b>To do this, he is required to manage certain missions during his activity:</b></p>
+            <p class="p1"> - Diagnose the company's information system in order to detect possible flaws. </p>
+            <p class="p1"> - Propose a range of solutions to secure the company's information and data. </p>
+            <p class="p1"> - Put in place the different processes and security charters. </p>
+            <p class="p1"> - Ensure the sustainability of security systems.  </p>
+            <p class="p1"> - Adapt security systems to new threats and changing technologies.</p>
+            <p>&nbsp;</p>
+      </div>
+      <!--FIN Les métiers qui m'intéressent-->
+
+    
+ <!--DEBUT À la rencontre des professionnels -->
+ <div class="profil-pro">
+    <img class="pp-pro" src="https://cdn.pixabay.com/photo/2016/03/09/09/22/meeting-1245776_1280.jpg" alt=""><h3 style="font-size: 36px;">8. Meeting the professionals</h3>
+    <p class="p1">As part of my professional project, I plan to meet professionals in the sector that attracts me. </p>
+    <p class="p1">I have attended some training (online) that talks about cybersecurity and it has only motivated me more and more.</p>
+    <p class="p1">These different events allowed me to ask questions related to the professions.<br> The contact with professionals will surely help me to improve my professional project. <br>Thus, I could measure the advantages and disadvantages of the job.</p>
+ 
+    <br><br><br><br><br>
+  </div><br>
+  <!--FIN À la rencontre des professionnels -->
+
+  <div class="intro">
+    <h3>Conclusion</h3>
+    <p><u><b>Listing my qualities and faults was not an easy exercise. It required a long moment of reflection. </b></u></p>
+    <p> This professional project helped me to know myself better. Three essential questions are the main thread of my project, namely :    </p>
+    <p style="color: red;">
+                    - What do I want to do?<br>
+                    - What can I do?<br>
+                    - What can I do? <br>   
+    </p>
+    <p><b>Thanks to this report, I have taken stock of my skills, my experiences and my professional goals. I now know that I want to work in the field of cybersecurity. </b></p>
+</div>
+
+<footer>                                                          <!-- le pied de page -->
+ 
+</footer>
+
+</body>
+</html>

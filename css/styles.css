@@ -1,0 +1,384 @@
+h1{
+    margin-top: 70px;
+    font-size: 60px;
+    text-size-adjust: 150px;
+    text-align: center;
+    color: #ff0606;
+    text-shadow: 1px 3px 0 #969696, 4px 1px 4px rgba(45, 17, 122, 0.65);
+    border: 7px inset #15e0e8;
+    border-radius: 24px;
+}
+h2{
+text-align: center;
+}
+
+h3{
+  margin-top: 5px;
+  margin-left: 15px;
+  color: #969696;
+  font-size: 30px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+video{
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  margin: 0 auto; 
+  width: 720px; 
+  height: auto;
+}
+.video{
+  text-align: center;
+}
+audio{
+  height: 100px;
+  width: 230px;
+}
+.push{                      /* Reference : " Veuillez appuyer sur la case qui vous interesse " */
+    text-align: center;
+    margin-top: 90px;
+  }
+
+
+/**********************************************************************
+DEBUT description de mes texte (Biographie, centre d'intérêt, etc)
+**********************************************************************/
+.profil-primo {
+  margin: 50px;
+  border-top: 7px inset #15e0e8;
+  border-left: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  padding-left: 10px;
+ 
+}
+
+
+.pp-primo{
+  width: 400px;
+  height: 300px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: right;
+  margin: 0 15px 15px 0;
+}
+
+
+.profil-secondo {
+  margin: 50px;
+  border-bottom: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  padding-left: 1px;
+}
+.pp-secondo{
+  width: 500px;
+  height: 412px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+/**********************************************************************
+FIN description de mes texte (Biographie, centre d'intérêt, etc)
+**********************************************************************/
+
+
+/**********************************************************************
+DEBUT de mes bouton dans la page d'accueil
+**********************************************************************/
+.frame {               /*Code pour les boutons en générale*/
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+  button {
+    margin: 50px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: #15e0e8;
+  background: linear-gradient(0deg, #15e0e8 0%, rgb(10, 88, 133) 100%);
+  }
+  .btn:hover {
+    color: #0a6b83;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn:before,
+  .btn:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #08928b;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn:hover:before,
+  .btn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+/**********************************************************************
+FIN de mes bouton dans la page d'accueil
+**********************************************************************/
+
+.profil-Bac {
+  margin: 50px;
+  border-top: 7px inset #15e0e8;
+  border-left: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  padding-right: 0px;
+ 
+}
+
+
+.pp-Bac{
+  width: 600px;
+  height: 400px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: right;
+  margin: 0 15px 80px 0;
+}
+
+.profil-Brevet {
+  margin: 50px;
+  border-left: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  padding-left: 1px;
+
+}
+.pp-Brevet{
+  width: 600px;
+  height: 380px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 50px 15px 0;
+}
+
+.profil-Italia {
+  margin: 50px;
+  border-bottom: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  padding-left: 1px;
+}
+.pp-Italia{
+  width: 360px;
+  height: 438px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 50px 15px 0;
+}
+hr{
+  border: 4px inset #15e0e8;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#bac{
+  color: white;
+  padding-left: 30px;
+}
+.bac{
+  padding-left: 30px;
+}
+ 
+#brevet{
+  padding-left: 30px;
+}
+
+#scuola{
+  padding-left: 30px;
+}
+
+
+.intro{
+  text-align: center;
+  margin: 50px;
+  border: 5px inset #15e0e8;
+  border-radius: 24px;
+}
+
+#intro{
+  margin: 15px;
+  margin-bottom: 30px;
+}
+
+.profil-qualita{
+  margin: 50px;
+  border-top: 7px inset #15e0e8;
+  border-left: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  
+}
+
+.pp-qualita{
+  width:600px;
+  height:400px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: right;
+  margin: 0 15px 15px 0;
+}
+
+.profil-defaut{
+  margin: 50px;
+  padding-left: 10px;
+  border-bottom: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+}
+.pp-defaut{
+  width: 360px;
+  height: 248px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 15px 80px 0;
+}
+
+
+.profil-goal{
+  margin: 50px;
+  border-top: 7px inset #15e0e8;
+  border-left: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+  
+}
+
+.pp-goal{
+  width: 400px;
+  height: 280px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: right;
+  margin: 0 1px 15px 0;
+}
+
+.profil-capable{
+  margin: 50px;
+  padding-left: 10px;
+  border-left: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+}
+
+.profil-futuro{
+  margin: 50px;
+  padding-left: 1px;
+  border-bottom: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-left: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+}
+.pp-futuro{
+  width: 500px;
+  height: 390px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 15px 80px 0;
+}
+
+.profil-pro{
+  margin: 50px;
+  padding-left: 1px;
+  border-bottom: 7px inset #15e0e8;
+  border-right: 7px inset #15e0e8;
+  border-radius: 24px;
+  font-size: 24px;
+}
+.pp-pro{
+  width: 400px;
+  height: 310px;
+  border: 7px inset #15e0e8;
+  border-radius: 24px;
+  float: left;
+  margin: 0 15px 80px 0;
+}
+
+.p1{
+  margin: 0px 0px 5.7px; 
+  padding-left: 40px;
+  font-variant-numeric: normal; 
+  font-variant-east-asian: normal; 
+  font-stretch: normal; 
+  font-size: 16px; 
+  line-height: normal; 
+  font-family: Times New Roman;
+}
+
+.p2{
+  color: white;
+  margin: 0px 0px 5.7px; 
+  padding-left: 20px;
+  font-variant-numeric: normal; 
+  font-variant-east-asian: normal; 
+  font-stretch: normal; 
+  font-size: 18px; 
+  line-height: normal; 
+  font-family: Times New Roman; 
+  min-height: 15px;
+}
+
+
+.last{
+  color: red;
+}

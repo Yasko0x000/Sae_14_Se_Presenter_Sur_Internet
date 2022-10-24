@@ -1,0 +1,399 @@
+
+@font-face
+{
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Montserrat-SemiBold';
+	src: url('../fonts/Montserrat-SemiBold.ttf');
+	font-style: normal;
+}
+html
+{
+
+	--body_bg_color : #1d2031;
+	--bg_border_color: #15e0e8;
+	--text_color_a: white;
+
+	--link_color_a: white;
+	--link_color_b: #6ca7f3;
+
+	--link_border_color_a: #6ca7f3;
+
+	--btn_bg_color_a : #15e0e8;
+
+	--btn_color : white;
+
+	--div_bg_color_a: white;
+
+	--input_select_bg_color: #f2f2f2;
+
+	--input_select_color: #1d2031;
+
+	--input_select_border_color: white;
+
+	--label_nav_color: #15e0e8;
+	--label_form_color: white;
+
+	--sidebar_bg_color: #262a40;
+
+}
+html,body
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	background-image: url('../Img/bg.png');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--body_bg_color);
+}
+a
+{
+	font-family: 'Montserrat-Bold', sans-serif;
+	text-decoration: none;
+	color: var(--link_color_a);
+}
+h1,h2,h3,h4,h5,p,span,label
+{
+	color: var(--text_color_a);
+}
+ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+input
+{
+	font-family: 'Montserrat-SemiBold', sans-serif;
+	padding: 10px 0px;
+	text-align: center;
+	border: solid 1px var(--input_select_border_color);
+	border-radius: 20px;
+	color:  var(--input_select_color);
+    background-color:  var(--input_select_bg_color);
+}
+select
+{
+	font-family: 'Montserrat-SemiBold', sans-serif;
+	-webkit-appearance:     none;
+    -moz-appearance:        none;
+    appearance:             none;
+    cursor:         pointer;
+    color:  var(--input_select_color);
+    background-color:  var(--input_select_bg_color);
+	padding: 10px 0px;
+	text-align: center;
+	border: solid 1px var(--input_select_border_color);
+	border-radius: 20px;
+	text-align-last: center;
+}
+button
+{
+	padding: 10px 20px;
+	border: none;
+	border-radius: 35px;
+	/*box-shadow: 1px 1px 18px #6ca7f3 ;*/
+	background-color: var(--bg_border_color);
+	cursor: pointer;
+	color: var(--btn_color) ;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+label
+{
+	cursor: pointer;
+	color: white;
+}
+input#check_menu
+{
+	display: none;
+}
+div.form-title
+{
+	width: 100%;
+	text-align: center;
+}
+
+div.form-title h2
+{
+	text-decoration: underline;
+	color: var(--text_color_a);
+	font-family: 'Montserrat-SemiBold';
+	margin: 10px 0px;
+}
+div.other_auth_btn
+{
+	width: 80%;
+	text-align: center;
+	margin: 0px auto;
+	color: white;
+	font-family: 'Montserrat-Bold';
+}
+div.other_auth_btn p
+{
+	margin: 10px 0px;
+}
+div.other_auth_btn a
+{
+	color: var(--bg_border_color);
+	font-size: 20px;
+}
+/* vert: #49ea91*/
+nav
+{
+	top: 0;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	height: 70px;
+	z-index: 10;
+}
+div.h-left
+{
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+div.h-left > label
+{
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+	color: var(--bg_border_color);
+}
+div.h-left > label i
+{
+	font-size: 30px;
+	transform: rotate(0deg);
+	transition: transform 0.3s ease-out;
+}
+div.h-left label i:hover
+{
+	color: #3fc8f3;
+}
+
+
+/* La barre de navigation */
+div.sidebar
+{
+	z-index: 10;
+	width: 250px;
+	left: -300px;
+	position: fixed;
+	height: 100vh;
+	background-color: var(--sidebar_bg_color);
+	top: 0px;
+	transition: left 0.5s ease;
+}
+/*Liste de la barre de navigation*/
+#check_menu:checked ~ nav .h-left > label > i
+{
+	transform: rotate(90deg);
+}
+#check_menu:checked ~ .sidebar
+{
+	left: 0%;
+}
+div.sidebar_close
+{
+
+	width: 100%;
+	margin: 40px 0px;
+	display: flex;
+	text-align: center;
+}
+div.sidebar_close img
+{
+	width: 70%;
+	margin-left: auto;
+	height: 50px;
+}
+div.sidebar_close label
+{
+	width: 20%;
+	text-align: center;
+	color: var(--bg_border_color);
+	margin: auto 0px;
+	margin-left: auto;
+	font-size: 25px;
+}
+
+div.nav-list
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.nav-list > a
+{
+	padding: 0px 30px;
+	width: 100%;
+	line-height: 52px;
+	transition-property: background;
+	transition: 0.4s;
+}
+div.nav-list > a > i
+{
+	font-size: 25px;
+	margin-right: 6px;
+}
+
+div.nav-list > a:hover
+{
+	background-color: var(--text_color_a);
+}
+div.nav-list > a:hover span,div.nav-list > a:hover i
+{
+	color: var(--bg_border_color);
+}
+
+div.nav-theme
+{
+	width: 340px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	font-family: 'Montserrat-Bold';
+}
+div.nav-theme span
+{
+	width: 30%;
+	text-align: right;
+	padding: 10px 0px;
+}
+div.nav-theme div
+{
+	background-color: var(--body_bg_color);
+	width: 40%; 
+	margin: auto;
+	display: flex;
+	border: solid 1px var(--bg_border_color);
+	border-radius: 20px;
+}
+div.nav-theme div label
+{
+	width: 50%;
+	text-align: center;
+	padding: 8px 0px;
+	border-radius: 20px;
+	transition: background-color 0.8s ease;
+}
+.choosed
+{
+	background-color: var(--bg_border_color);
+	color: white;
+}
+
+div.site_loader
+	{
+		background-color: #090a10;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		z-index: 500;
+	}
+div.site_loader	p 
+	{
+	  font-family: 'Montserrat-Bold';
+	  position: relative;
+	  font-family: sans-serif;
+	  text-transform: uppercase;
+	  font-size: 6em;
+	  letter-spacing: 4px;
+	  overflow: hidden;
+	  background: linear-gradient(90deg, #15e0e8, #fff, #15e0e8);
+	  background-repeat: no-repeat;
+	  background-size: 80%;
+	  animation: animate 3s linear infinite;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+	}
+
+	@keyframes animate 
+	{
+	  0% 
+	  {
+	    background-position: -500%;
+	  }
+	  100% 
+	  {
+	    background-position: 500%;
+	  }
+	}
+	.off_loader
+	{
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.4s linear;
+	}
+
+		
+@media screen and (max-width: 700px) and (min-width: 250px)
+{
+	div.site_loader	p 
+	{
+	  font-size: 3em;
+	}
+	div.form-title img
+	{
+		width: 200px;
+	}
+	nav
+	{
+		height: 40px;
+	}
+	div.h-left
+	{
+		width: 100%;
+	}
+	
+	#check_device_menu
+	{
+		display: none;
+	}
+	#check_device_menu:checked ~ ul
+	{
+		position: fixed;
+		top: 40px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	div.nav-list > a
+	{
+		padding: 0px 25px;
+	}
+		div.site_loader span	
+		{
+			font-size: 40px;
+		}
+	
+}
+@media screen and  (max-width: 1100px) and (min-width: 250px)
+{
+	body
+	{
+		background-image: url('../Img/bvb.png');
+		background-size: cover;
+		background-repeat: repeat-y;
+	}
+	
+}
